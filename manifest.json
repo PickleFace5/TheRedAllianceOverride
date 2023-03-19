@@ -1,0 +1,20 @@
+{
+	"manifest_version": 3,
+	"name": "The Red Alliance Takeover",
+	"version": "1.0.0",
+	"description": "Changes the stylesheet and html page for thebluealliance.com to become apart of the red alliance.",
+	"action": {},
+	
+	"content_scripts": [
+		{
+			"matches": ["*://www.thebluealliance.com/*"],
+			"js": ["main.js"]
+		}
+	],
+	
+	"permissions": [
+        "webNavigation",
+		"activeTab",
+		"scripting"
+    ]
+}
